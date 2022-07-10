@@ -1,1 +1,1 @@
-# custom-launcher
+# Custom Launcher by MilleniumMods
