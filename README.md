@@ -13,6 +13,7 @@
 - [ ] Añadir soporte para instalar Forge/Fabric automáticamente
 - [ ] Añadir lista de dependencias (Si aplica)
 - [ ] Añadir una sección de instalación en este archivo
+- [ ] Crear opciones modulares
 - [ ] Volver Open-Source una vez el código no sea completamente un meme
 - [ ] Soporte multi-lenguaje
     - [x] Español
