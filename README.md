@@ -13,8 +13,12 @@
 - [ ] Añadir soporte para instalar Forge/Fabric automáticamente
 - [ ] Añadir lista de dependencias (Si aplica)
 - [ ] Añadir una sección de instalación en este archivo
-- [ ] Crear opciones modulares
+- [ ] Crear opciones modulares:
+    - [ ] Instalación de Modpack fijo automáticamente 
+    - [ ] Actualización automática de modpacks
+    - [ ] Estilo de botones personalizado 
+    - [ ] Botones de redes/links importantes con íconos personalizados
 - [ ] Volver Open-Source una vez el código no sea completamente un meme
-- [ ] Soporte multi-lenguaje
+- [ ] Soporte multi-lenguaje:
     - [x] Español
     - [ ] Inglés 
