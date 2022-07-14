@@ -28,3 +28,7 @@ Custom Launcher es un projecto open-source creado y administrado por MilleniumMo
 - [ ] Soporte multi-lenguaje:
     - [x] Español
     - [ ] Inglés 
+
+<!-- LICENCIA -->
+# Licencia
+Licencia todavía por decidir
