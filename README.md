@@ -18,6 +18,7 @@
     - [ ] Actualización automática de modpacks
     - [ ] Estilo de botones personalizado 
     - [ ] Botones de redes/links importantes con íconos personalizados
+    - [ ] Instalar Java automáticamente
 - [ ] Volver Open-Source una vez el código no sea completamente un meme
 - [ ] Soporte multi-lenguaje:
     - [x] Español
