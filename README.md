@@ -7,15 +7,26 @@
 # Contribución
 Custom Launcher es un projecto open-source creado y administrado por MilleniumMods, sin embargo, estamos totalmente abiertos a cualquier aporte ya sea monetario, o en forma de código mediante Pull Requests. Si te interesa aportar de cualquier forma al proyecto, no dudes en contactarte con nosotros vía [Discord](https://discord.milleniummods.com)
 
+<!-- COMPILAR POR TU CUENTA -->
+# Cómo compilar por tu cuenta
+Requerimientos:
+- Sistema operativo: Windows 7 en adelante ; Linux [Testeado en Ubuntu 22.04]
+- NodeJS v16
+
+**Instrucciones**
+
+
 <!-- OBJETIVOS -->
 # Objetivos 
 
 - [ ] Organizar de forma correcta el GitHub
 - [ ] Añadir changelog
+- [ ] Añadir instrucciones para compilar
 - [ ] Lograr iniciar Minecraft desde el back-end
 - [ ] Crear el front-end principal
 - [ ] Añadir soporte para múltiples versiones 
 - [ ] Añadir soporte para instalar Forge/Fabric automáticamente
+- [ ] Publicar al npm registry para compilar y publicar para desarrollo más fácilmente
 - [ ] Añadir lista de dependencias (Si aplica)
 - [ ] Añadir una sección de instalación en este archivo
 - [ ] Crear opciones modulares:
