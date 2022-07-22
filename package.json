@@ -26,6 +26,9 @@
   },
   "homepage": "https://github.com/MilleniumMods/Custom-Launcher#readme",
   "devDependencies": {
-    "electron": "^19.0.9"
+    "electron": "^19.0.9",
+    "esm": "^3.2.25",
+    "minecraft-launcher-core": "^3.16.13",
+    "requirejs": "^2.3.6"
   }
 }
