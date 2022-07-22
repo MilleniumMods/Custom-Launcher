@@ -1,6 +1,6 @@
 {
   "name": "custom-launcher",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Launcher de Minecraft personalizable basado en ElectronJS",
   "main": "src/javascript/main.js",
   "scripts": {
@@ -19,7 +19,12 @@
     "electron-app",
     "electronjs"
   ],
-  "author": "joshy23",
+  "organization": "MilleniumMods",
+  "authors: [
+    "AnbielGz",
+    "joshy56",
+    "TehMartinXz"
+  ]
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/MilleniumMods/Custom-Launcher/issues"
