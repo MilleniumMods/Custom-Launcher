@@ -1,5 +1,6 @@
 const path = require("path");
 const settings = require('../json/settings.json')
+const debuglog = settings.launcher.debug.debug_log_prefix
 const {
     Client,
     Authenticator
@@ -9,11 +10,13 @@ const launcher = new Client();
 window.addEventListener(
     "DOMContentLoaded",
     () => {
-        console.log("AA");
+        console.log(debuglog + 'Cargado el DOM');
         watchInitGameButton();
+        watchSelectedVersion();
     }
 )
 
+// Lista de versiones
 window.addEventListener(
     "DOMContentLoaded", () => {
 
@@ -26,9 +29,11 @@ fetch(settings.client.versions_api_url, { method: "Get" })
     .then((versionesjson) => {
         
 const versiones = versionesjson.versions.map((v) => v.id)
+/*
 versionesjson.versions.map((version) => {
     console.log(version)
 })
+*/
 for (var i = 0; i < versiones.length; i++) {
     const elemento = document.getElementById("versionMC")
     const newNode = document.createElement('option');
@@ -38,12 +43,31 @@ for (var i = 0; i < versiones.length; i++) {
     });
     }
 )
+
+var chosenVersion
+const watchSelectedVersion = () => {
+    document.getElementById("versionMC").addEventListener(
+        'click',
+        () => {
+            if(!document.getElementById("versionMC").value.includes("Selecciona")) {
+            chosenVersion = document.getElementById("versionMC").value;
+            console.log(debuglog + 'Seleccionada la version: ' + chosenVersion)
+            }
+        }
+    )
+}
+
+
 const watchInitGameButton = () => {
     document.getElementById("init-game").addEventListener(
         'click',
         () => {
-            console.log("A");
             let nickname = document.getElementById("nickname").value;
+            
+            if(nickname == undefined || nickname.includes(" ")) {
+                console.log(debuglog + 'El Nickname no está definido.')
+            } else {
+                console.log(debuglog + 'El Nickname es: ' + nickname + ', iniciando Minecraft')
             Authenticator.getAuth(
                     nickname
                 )
@@ -54,7 +78,7 @@ const watchInitGameButton = () => {
                             authorization: user,
                             root: "./minecraft",
                             version: {
-                                number: "1.16.5",
+                                number: `${chosenVersion}`,
                                 type: "release"
                             },
                             memory: {
@@ -66,6 +90,7 @@ const watchInitGameButton = () => {
                 )
                 .catch((reason) => console.log(reason))
         }
+    }
     )
 
     launcher.on(

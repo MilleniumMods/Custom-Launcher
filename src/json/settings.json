@@ -2,5 +2,14 @@
     "client" : {
         "versions_api_url" : "https://piston-meta.mojang.com/mc/game/version_manifest_v2.json",
         "default_version" : "1.19"
-    }
+    },
+    "launcher" : {
+        "debug" : {
+            "enabled" : true,
+            "debug_log_prefix" : "Debug | "
+            },
+        "ui" : {
+            "default_lang" : "es_ES"
+            }
+        }
 }
