@@ -1,4 +1,5 @@
 const path = require("path");
+const settings = require('../json/settings.json')
 const {
     Client,
     Authenticator
@@ -13,6 +14,30 @@ window.addEventListener(
     }
 )
 
+window.addEventListener(
+    "DOMContentLoaded", () => {
+
+    // Utilizar fetch para obtener la API online de las versiones de Minecraft      
+    
+    const fetch = require('node-fetch');
+
+fetch(settings.client.versions_api_url, { method: "Get" })
+    .then(res => res.json())
+    .then((versionesjson) => {
+        
+const versiones = versionesjson.versions.map((v) => v.id)
+versionesjson.versions.map((version) => {
+    console.log(version)
+})
+for (var i = 0; i < versiones.length; i++) {
+    const elemento = document.getElementById("versionMC")
+    const newNode = document.createElement('option');
+    newNode.appendChild(document.createTextNode(versiones[i]));
+    elemento.appendChild(newNode);
+        }
+    });
+    }
+)
 const watchInitGameButton = () => {
     document.getElementById("init-game").addEventListener(
         'click',
