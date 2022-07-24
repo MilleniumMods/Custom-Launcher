@@ -9,7 +9,9 @@
             "debug_log_prefix" : "Debug | "
             },
         "ui" : {
-            "default_lang" : "es_ES"
+            "default_lang" : "es_ES",
+            "assets_dir" : "src/assets/",
+            "icon_name" : "main.ico"
             }
         }
 }
