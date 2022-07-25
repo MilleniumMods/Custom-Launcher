@@ -5,6 +5,7 @@
     },
     "launcher" : {
         "debug" : {
+            "environment" : "development",
             "enabled" : true,
             "debug_log_prefix" : "Debug | "
             },
@@ -12,6 +13,14 @@
             "default_lang" : "es_ES",
             "assets_dir" : "src/assets/",
             "icon_name" : "main.ico"
-            }
+            },
+        "functions" : {
+            "default_version_type" : [
+                "release",
+                "snapshot",
+                "old_beta",
+                "old_alpha"
+            ]
+        }
         }
 }

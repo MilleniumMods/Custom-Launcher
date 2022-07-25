@@ -28,16 +28,17 @@ fetch(settings.client.versions_api_url, { method: "Get" })
     .then(res => res.json())
     .then((versionesjson) => {
         
-const versiones = versionesjson.versions.map((v) => v.id)
-/*
-versionesjson.versions.map((version) => {
-    console.log(version)
-})
-*/
-for (var i = 0; i < versiones.length; i++) {
+// Get the version.id for each version.type that's a release
+
+const versiones = versionesjson.versions.filter((v) => v.type == 'release')
+const releases = versiones.map((v) => v.id)
+
+// console.log(releases) // Debug
+
+for (var i = 0; i < releases.length; i++) {
     const elemento = document.getElementById("versionMC")
     const newNode = document.createElement('option');
-    newNode.appendChild(document.createTextNode(versiones[i]));
+    newNode.appendChild(document.createTextNode(releases[i]));
     elemento.appendChild(newNode);
         }
     });

@@ -3,6 +3,12 @@ const path = require("path");
 const settings = require('../json/settings.json');
 const ui = settings.launcher.ui;
 
+if(settings.launcher.debug.environment == 'development') {
+    require('electron-reload')(__dirname, {
+        electron: path.join(__dirname, '../node_modules', '.bin', 'electron')
+    });
+}
+
 const createWindow = () => {
     const screen = require("electron").screen;
     const { width, height } = screen.getPrimaryDisplay().workAreaSize;
