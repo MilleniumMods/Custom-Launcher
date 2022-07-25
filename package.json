@@ -35,5 +35,8 @@
     "esm": "^3.2.25",
     "minecraft-launcher-core": "^3.16.13",
     "requirejs": "^2.3.6"
+  },
+  "dependencies": {
+    "electron-reload": "^2.0.0-alpha.1"
   }
 }

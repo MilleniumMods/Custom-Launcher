@@ -3,9 +3,9 @@ const path = require("path");
 const settings = require('../json/settings.json');
 const ui = settings.launcher.ui;
 
-if(settings.launcher.debug.environment == 'development') {
+if(settings.launcher.debug.environment !== 'production') {
     require('electron-reload')(__dirname, {
-        electron: path.join(__dirname, '../node_modules', '.bin', 'electron')
+        electron: path.join(__dirname, '../../node_modules', '.bin', 'electron')
     });
 }
 
