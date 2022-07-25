@@ -26,9 +26,9 @@ Requerimientos:
 - [ ] Organizar de forma correcta el GitHub
 - [ ] Añadir changelog
 - [ ] Añadir instrucciones para compilar
-- [ ] Lograr iniciar Minecraft desde el back-end
+- [x] Lograr iniciar Minecraft desde el back-end
 - [ ] Crear el front-end principal
-- [ ] Añadir soporte para múltiples versiones 
+- [x] Añadir soporte para múltiples versiones 
 - [ ] Añadir soporte para instalar Forge/Fabric automáticamente
 - [ ] Publicar al npm registry para compilar y publicar para desarrollo más fácilmente
 - [ ] Añadir lista de dependencias (Si aplica)
@@ -38,7 +38,6 @@ Requerimientos:
     - [ ] Actualización automática de modpacks
     - [ ] Estilo de botones personalizado 
     - [ ] Botones de redes/links importantes con íconos personalizados
-    - [ ] Instalar Java automáticamente
 - [ ] Volver Open-Source una vez el código no sea completamente un meme
 - [ ] Soporte multi-lenguaje:
     - [x] Español
