@@ -1,6 +1,6 @@
 {
   "name": "custom-launcher",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Launcher de Minecraft personalizable basado en ElectronJS",
   "main": "src/main.js",
   "scripts": {
