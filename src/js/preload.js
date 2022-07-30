@@ -1,24 +1,18 @@
 const path = require("path");
-const settings = require('../json/settings.json')
+const settings = require('./json/settings.json')
 const debuglog = settings.launcher.debug.debug_log_prefix
-const {
-    Client,
-    Authenticator
-} = require("minecraft-launcher-core");
+const { Client, Authenticator } = require("minecraft-launcher-core");
+
 const launcher = new Client();
 
-window.addEventListener(
-    "DOMContentLoaded",
-    () => {
-        console.log(debuglog + 'Cargado el DOM');
-        watchInitGameButton();
-        watchSelectedVersion();
-    }
-)
+window.addEventListener("DOMContentLoaded",() => {
+    console.log(debuglog + 'Cargado el DOM');
+       watchInitGameButton();
+    watchSelectedVersion();
+})
 
 // Lista de versiones
-window.addEventListener(
-    "DOMContentLoaded", () => {
+window.addEventListener("DOMContentLoaded", () => {
 
     // Utilizar fetch para obtener la API online de las versiones de Minecraft      
     
