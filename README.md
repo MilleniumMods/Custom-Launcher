@@ -4,7 +4,7 @@
 - Es un Launcher de Minecraft personalizable basado en ElectronJS que tiene el objetivo de facilitar el acceso a un Launcher propio personalizable a los administradores de servidores y comunidades de bajo presupuesto que no pueden permitirse el desarrollar una alternativa 100% personalizada para sus jugadores. 
 
 *¿Cómo se miden las actualizaciones?* ❔
-- Nuestro sistema de versiones se basa en *<Actualizaciones mayores>*/*<Cambios al frontend>*/*<Cambios al backend>*, por ejemplo, la versión **1.4.13** tendría detrás **1** actualización mayor (Se considera "mayor" por el equipo), 4 actualizaciones o cambios al front-end, y 13 actualizaciones o cambios al back-end.
+- Nuestro sistema de versiones se basa en *Actualizaciones mayores*/*Cambios al frontend*/*Cambios al backend*, por ejemplo, la versión **1.4.13** tendría detrás **1** actualización mayor (Se considera "mayor" por el equipo), 4 actualizaciones o cambios al front-end, y 13 actualizaciones o cambios al back-end.
 
 <!-- CONTRIBUCIÓN -->
 # Contribución 🆘
