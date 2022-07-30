@@ -37,6 +37,8 @@
     "requirejs": "^2.3.6"
   },
   "dependencies": {
+    "ejs": "^3.1.8",
+    "ejs-electron": "^2.1.1",
     "electron-reload": "^2.0.0-alpha.1"
   }
 }

@@ -11,6 +11,7 @@
             },
         "ui" : {
             "default_lang" : "es_ES",
+            "title": "Custom-Launcher - MilleniumMods",
             "assets_dir" : "src/assets/",
             "icon_name" : "main.ico"
             },
