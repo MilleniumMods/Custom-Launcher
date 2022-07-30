@@ -23,9 +23,23 @@ Custom Launcher es un projecto open-source creado y administrado por MilleniumMo
 
 <!-- COMPILAR POR TU CUENTA -->
 # Cómo compilar por tu cuenta
-Requerimientos:
+**Requerimientos:**
 - Sistema operativo: Windows 7 en adelante ; Linux [Testeado en Ubuntu 22.04]
 - NodeJS v16
+
+**Clonar e instalar las depedencias:**
+
+```console
+> git clone https://github.com/MilleniumMods/Custom-Launcher.git
+> cd Custom-Launcher
+> npm install
+```
+
+**Ejecutar la aplicación:**
+
+```console
+> npm start
+```
 
 <!-- OBJETIVOS -->
 # Objetivos 🗒️
