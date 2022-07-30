@@ -19,6 +19,7 @@ const createWindow = () => {
     const bWindow = new BrowserWindow({
         width: Math.floor(width * 0.85),
         height: Math.floor(height * 0.9),
+        resizable: false,
         icon: path.join(ui.assets_dir + ui.icon_name),
         webPreferences:{
             preload: path.join(__dirname, '/js/preload.js')
@@ -26,7 +27,7 @@ const createWindow = () => {
     });
 
     bWindow.loadURL(url.format({
-        pathname: path.join(__dirname, "/html/index.html"),
+        pathname: path.join(__dirname, "/views/index.html"),
     }))
 };
 
