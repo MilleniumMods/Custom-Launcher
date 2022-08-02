@@ -23,11 +23,15 @@ const createWindow = () => {
         resizable: false,
         icon: path.join(ui.assets_dir + ui.icon_name),
         webPreferences:{
-            preload: path.join(__dirname, '/js/preload.js')
+            preload: path.join(__dirname, '/js/preload.js'),
+            nodeIntegration: true,
+            contextIsolation: false
         }
     });
 
     win.removeMenu();
+
+    if (process.env.NODE != 'production') { win.openDevTools() }
 
     ejse.data('title', ui.title);
     win.loadURL(url.format({
