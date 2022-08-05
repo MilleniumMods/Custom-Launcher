@@ -6,7 +6,7 @@ const debuglog = settings.launcher.debug.debug_log_prefix
 window.addEventListener("DOMContentLoaded",() => {
     console.log(debuglog + 'Cargado el DOM');
     
-    getMinecraftVersions()
+    //getMinecraftVersions()
 })
 
 // Get minecraft versions
@@ -38,4 +38,3 @@ const getMinecraftVersions = () => {
         console.log(error)
     })
 }
-

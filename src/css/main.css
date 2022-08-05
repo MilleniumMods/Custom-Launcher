@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Frame (frame.ejs)                                                           *
+ *                                                                             *
+ ******************************************************************************/
+
+/* Frame Bar*/
+ #frameBar {
+    position: relative;
+    user-select: none;
+    background-color: rgb(22, 22, 22);
+}
+
+/* Frame Windows Content */
+#frame-win {
+    height: 50px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-app-region: drag;
+}
+
+/* Frame Windows Title */
+.frame-win-title {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 10px;
+    -webkit-app-region: no-drag;
+}
+
+/* Frame Windows App Icon */
+.frame-win-title > .frame-app-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+/* Frame Content Buttons*/
+.frame-actions {
+    display: flex;
+    align-items: center;
+    -webkit-app-region: no-drag;
+}
+
+/* Frame Buttons */
+.frameBtn {
+    height: 50px;
+    width: 50px;
+    border: none;
+    cursor: pointer;
+    margin: auto;
+    background-color: rgb(22, 22, 22);
+    color: white;
+    font-size: 17px;
+    transition: all 0.2s ease-in-out;
+}
+ .frameBtn:hover {
+    background-color: rgb(44, 44, 44);
+  }
+  .frameBtn:active {
+    background-color: rgb(44, 44, 44);
+  }
+  .frameBtn:focus {
+    outline: none;
+  }
+   

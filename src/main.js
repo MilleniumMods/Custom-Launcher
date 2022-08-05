@@ -1,4 +1,7 @@
-const { app, BrowserWindow, screen } = require("electron");
+const remoteMain = require('@electron/remote/main')
+remoteMain.initialize()
+
+const { app, BrowserWindow, IpcMain, screen } = require("electron");
 const ejse = require('ejs-electron')
 const path = require("path");
 const url = require("url");
@@ -17,10 +20,12 @@ const createWindow = () => {
     
     const { width, height } = screen.getPrimaryDisplay().workAreaSize;
 
-    const win = new BrowserWindow({
+    let win = new BrowserWindow({
         width: Math.floor(width * 0.85),
         height: Math.floor(height * 0.9),
+        title: ui.title,
         resizable: false,
+        frame: false,
         icon: path.join(ui.assets_dir + ui.icon_name),
         webPreferences:{
             preload: path.join(__dirname, '/js/preload.js'),
@@ -29,15 +34,22 @@ const createWindow = () => {
         }
     });
 
+    remoteMain.enable(win.webContents)
     win.removeMenu();
 
     if (process.env.NODE != 'production') { win.openDevTools() }
 
     ejse.data('title', ui.title);
+    ejse.data('iconName', ui.icon_name)
+    
     win.loadURL(url.format({
         protocol: 'file:',
         pathname: path.join(__dirname, "views", 'app.ejs'),
     }))
+
+    win.on('closed', () => { 
+        win = null;
+    })
 };
 
 app.whenReady().then(() => {
