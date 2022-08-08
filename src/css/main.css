@@ -19,7 +19,7 @@
 
 /* Frame Windows Content */
 #frame-win {
-    height: 50px;
+    height: 45px;
     width: 100%;
     top: 0;
     left: 0;
@@ -30,19 +30,22 @@
 }
 
 /* Frame Windows Title */
-.frame-win-title {
+.frame-win-header {
     color: white;
-    font-size: 16px;
-    font-weight: bold;
     margin-left: 10px;
+    align-items: center;
     -webkit-app-region: no-drag;
 }
 
 /* Frame Windows App Icon */
-.frame-win-title > .frame-app-icon {
-    width: 16px;
-    height: 16px;
-    margin-right: 5px;
+.frame-app-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.frame-app-title {
+    font-size: 14px;
+    font-weight: bold;
 }
 
 /* Frame Content Buttons*/
@@ -54,7 +57,7 @@
 
 /* Frame Buttons */
 .frameBtn {
-    height: 50px;
+    height: 45px;
     width: 50px;
     border: none;
     cursor: pointer;

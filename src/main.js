@@ -40,7 +40,7 @@ const createWindow = () => {
     if (process.env.NODE != 'production') { win.openDevTools() }
 
     ejse.data('title', ui.title);
-    ejse.data('iconName', ui.icon_name)
+    ejse.data('srcIcon', path.join(__dirname, 'assets', ui.icon_name))
     
     win.loadURL(url.format({
         protocol: 'file:',
