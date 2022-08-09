@@ -6,7 +6,7 @@
 
 body {
     transition: background-image 1s ease;
-    background-size: cover;
+    /*background-size: cover;*/
     user-select: none;
 }
 
