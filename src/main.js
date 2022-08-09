@@ -41,6 +41,7 @@ const createWindow = () => {
 
     ejse.data('title', ui.title);
     ejse.data('srcIcon', path.join(__dirname, 'assets', ui.icon_name))
+    ejse.data('bgId', path.join(__dirname, 'assets', 'backgrounds', 'base.png'))
     
     win.loadURL(url.format({
         protocol: 'file:',
