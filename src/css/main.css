@@ -97,6 +97,14 @@ body {
 .btnClose:hover {
     background-color: rgba(151, 12, 12, 0.829);
 }
+
+/* Button Minimize*/
+.btnMinimize i {
+    transform: rotate(-38deg);
+    margin-top: 15px;
+}
+
+
 /*******************************************************************************
  *                                                                             *
  * Preloader (preloader.ejs)                                                           *
@@ -106,7 +114,36 @@ body {
 #preloader {
     width: 100%;
     height: 100%;
-    background-color: red;
+    background-color: rgb(243, 243, 243);
+    position: fixed;
     z-index: 999999;
-    transition: all 0.2s ease-in-out;
+    transition: all 1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
  }
+
+ .preloader-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: calc(100% - 350px);
+    max-height: calc(100% - 350px);
+    text-align: center;
+ }
+
+ .custom-loader {
+    width: 60px;
+    height:60px;
+    border-radius:50%;
+    margin-bottom: 40px;
+    background:conic-gradient(#0000 10%,#16b310);
+    -webkit-mask:radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
+    animation:s3 1s infinite linear;
+  }
+
+  @keyframes s3 {to{transform: rotate(1turn)}}
+
+
+
