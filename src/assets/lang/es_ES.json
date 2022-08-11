@@ -1,0 +1,18 @@
+
+{
+    "ADVERTENCIA: Es probable que cambiemos el órden/formato de estos JSON" : "si",
+
+    "frontend" : {
+        "buttons" : {
+            "play" : "Jugar",
+            "test_text" : "Hola mundo!"
+        },
+        "Settings" : {
+            "what" : "<Insertar algo aquí>"
+        }
+    },
+    "js" : {
+        
+    }
+
+}

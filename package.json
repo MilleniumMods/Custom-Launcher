@@ -1,10 +1,9 @@
 {
   "name": "custom-launcher",
-  "version": "0.0.5",
+  "version": "0.1.6",
   "description": "Launcher de Minecraft personalizable basado en ElectronJS",
   "main": "src/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron ."
   },
   "repository": {
@@ -32,11 +31,17 @@
   "homepage": "https://github.com/MilleniumMods/Custom-Launcher#readme",
   "devDependencies": {
     "electron": "^19.0.9",
+    "electron-reload": "^2.0.0-alpha.1",
     "esm": "^3.2.25",
-    "minecraft-launcher-core": "^3.16.13",
     "requirejs": "^2.3.6"
   },
   "dependencies": {
-    "electron-reload": "^2.0.0-alpha.1"
+    "@electron/remote": "^2.0.8",
+    "@fortawesome/fontawesome-free": "^6.1.2",
+    "axios": "^0.27.2",
+    "bootstrap": "^5.2.0",
+    "ejs": "^3.1.8",
+    "ejs-electron": "^2.1.1",
+    "minecraft-launcher-core": "^3.16.13"
   }
 }
