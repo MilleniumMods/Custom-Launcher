@@ -56,7 +56,7 @@ Custom Launcher es un projecto open-source creado y administrado por MilleniumMo
 - [ ] Utilizar regex para los parámetros permitidos en algunas opciones (Cómo el Nickname)
 - [ ] Guardar los datos personalizables luego de reiniciar la aplicación
 - [ ] Añadir soporte opcional para cuentas de Mojang y Microsoft
-- [ ] Añadir soporte para múltiples versiones 
+- [x] Añadir soporte para múltiples versiones 
 - [ ] Añadir soporte para instalar Forge/Fabric automáticamente
 - [ ] Publicar al npm registry para compilar y publicar para desarrollo más fácilmente
 - [ ] Añadir lista de dependencias (Si aplica)
@@ -66,7 +66,6 @@ Custom Launcher es un projecto open-source creado y administrado por MilleniumMo
     - [ ] Actualización automática de modpacks
     - [ ] Estilo de botones personalizado 
     - [ ] Botones de redes/links importantes con íconos personalizados
-    - [ ] Instalar Java automáticamente
 - [ ] Volver Open-Source una vez el código no sea completamente un meme
 - [ ] Soporte multi-lenguaje:
     - [x] Español
