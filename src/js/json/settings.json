@@ -1,7 +1,7 @@
 {
     "client" : {
         "versions_api_url" : "https://piston-meta.mojang.com/mc/game/version_manifest_v2.json",
-        "default_version" : "1.19"
+        "default_version" : "1.19.2"
     },
     "launcher" : {
         "debug" : {
@@ -13,7 +13,8 @@
             "default_lang" : "es_ES",
             "title": "Custom-Launcher - MilleniumMods",
             "assets_dir" : "src/assets/",
-            "icon_name" : "main.ico"
+            "icon_name" : "main.ico",
+            "default_background" : "base.png"
             },
         "functions" : {
             "default_version_type" : [

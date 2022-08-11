@@ -7,6 +7,7 @@ const path = require("path");
 const url = require("url");
 const settings = require("./js/json/settings.json");
 const ui = settings.launcher.ui;
+const lang = require(`./assets/lang/${settings.launcher.ui.default_lang}.json`);  // Get lang file based on what languaje is set in settings.json
 
 
 // check if the environment is dev
@@ -41,7 +42,8 @@ const createWindow = () => {
 
     ejse.data('title', ui.title);
     ejse.data('srcIcon', path.join(__dirname, 'assets', ui.icon_name))
-    ejse.data('bgId', path.join(__dirname, 'assets', 'backgrounds', 'base.png'))
+    ejse.data('bgId', path.join(__dirname, 'assets', 'backgrounds', `${ui.default_background}`)) // Get background based on what background is set in settings.json
+    ejse.data('helloworld', lang.frontend.buttons.test_text) // Prueba
     
     win.loadURL(url.format({
         protocol: 'file:',
