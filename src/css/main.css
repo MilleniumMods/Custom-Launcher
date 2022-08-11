@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    transition: background-image 1s ease;
+    /*background-size: cover;*/
+    user-select: none;
+}
+
+#root {
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 45px);
+}
+
+#main[overlay] {
+    filter: blur(3px) contrast(0.9) brightness(1.0);
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Frame (frame.ejs)                                                           *
+ *                                                                             *
+ ******************************************************************************/
+
+/* Frame Bar*/
+ #frameBar {
+    position: relative;
+    user-select: none;
+    background-color: rgb(22, 22, 22);
+}
+
+/* Frame Windows Content */
+#frame-win {
+    height: 45px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-app-region: drag;
+}
+
+/* Frame Windows Title */
+.frame-win-header {
+    color: white;
+    margin-left: 10px;
+    align-items: center;
+    -webkit-app-region: no-drag;
+}
+
+/* Frame Windows App Icon */
+.frame-app-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.frame-app-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Frame Content Buttons*/
+.frame-actions {
+    display: flex;
+    align-items: center;
+    -webkit-app-region: no-drag;
+}
+
+/* Frame Buttons */
+.frameBtn {
+    height: 45px;
+    width: 50px;
+    border: none;
+    cursor: pointer;
+    margin: auto;
+    background-color: rgb(22, 22, 22);
+    color: white;
+    font-size: 17px;
+    transition: all 0.2s ease-in-out;
+}
+ .frameBtn:hover {
+    background-color: rgb(44, 44, 44);
+  }
+  .frameBtn:active {
+    background-color: rgb(44, 44, 44);
+  }
+  .frameBtn:focus {
+    outline: none;
+  }
+
+/* Button Close*/
+.btnClose:hover {
+    background-color: rgba(151, 12, 12, 0.829);
+}
+
+/* Button Minimize*/
+.btnMinimize i {
+    transform: rotate(-38deg);
+    margin-top: 15px;
+}
+
+
+/*******************************************************************************
+ *                                                                             *
+ * Preloader (preloader.ejs)                                                           *
+ *                                                                             *
+ ******************************************************************************/
+
+#preloader {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(243, 243, 243);
+    position: fixed;
+    z-index: 999999;
+    transition: all 1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+
+ .preloader-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: calc(100% - 350px);
+    max-height: calc(100% - 350px);
+    text-align: center;
+ }
+
+ .custom-loader {
+    width: 60px;
+    height:60px;
+    border-radius:50%;
+    margin-bottom: 40px;
+    background:conic-gradient(#0000 10%,#16b310);
+    -webkit-mask:radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
+    animation:s3 1s infinite linear;
+  }
+
+  @keyframes s3 {to{transform: rotate(1turn)}}
+
+
+
