@@ -1,12 +1,12 @@
 const { IpcRenderer, shell, webFrame } = require('electron');
 const remote = require('@electron/remote');
 
-// window onload
+// window onload preload
 window.onload = () => {
-    /*let preloader = document.getElementById('preloader');
+    let preloader = document.getElementById('preloader');
 
     preloader.style.visibility = 'hidden';
-    preloader.style.opacity = '0';*/
+    preloader.style.opacity = '0';
 }
 
 document.addEventListener('readystatechange', () => {

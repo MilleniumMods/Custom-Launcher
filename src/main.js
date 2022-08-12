@@ -18,16 +18,19 @@ if(settings.launcher.debug.environment !== 'production') {
     });
 }
 
+// Get the splash text from file 
 const getSplashesText = () => {
 
     let data  = fs.readFileSync(path.join(__dirname, 'assets', 'splashes_texts.json'), 'utf8')
     let splashes = JSON.parse(data)
 
     let random = Math.floor(Math.random() * splashes.es.length)
+
     return splashes.es[random]
     
 }
 
+// Main Window
 const createWindow = () => {
     
     const { width, height } = screen.getPrimaryDisplay().workAreaSize;
