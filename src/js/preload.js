@@ -1,6 +1,7 @@
 const path = require("path");
 const settings = require('./json/settings.json')
-const axios = require('axios')
+const axios = require('axios');
+const { randomBytes } = require("crypto");
 const debuglog = settings.launcher.debug.debug_log_prefix
 
 window.addEventListener("DOMContentLoaded",() => {

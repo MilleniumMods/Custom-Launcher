@@ -2,7 +2,24 @@
     <div class="preloader-wrapper">
         <div class="custom-loader"></div>
         <h5>Cargando...</h5>
-        <br>
-        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, distinctio!</span>
+        <% if (splash_text.length > 0) { %>
+            <span><%=splash_text %></span>
+        <% } else { %>
+            <span>Aqui iria un texto... ¡tan solo si la función que leé los archivos funcionara!</span>
+         <% } %> 
     </div>
-</div>
+    <div class="media-container">
+        <label>¡Siguenos!</label>
+        <ul class="social-list">
+            <li>
+                <a href="https://twitter.com/MilleniumMods"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+                <a href="https://instagram.com/millenium_mods"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+                <a href="https://discord.milleniummods.com"><i class="fa-brands fa-discord"></i></a>
+            </li> 
+        </ul>
+    </div>
+</div> 

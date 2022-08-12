@@ -4,6 +4,7 @@ remoteMain.initialize()
 const { app, BrowserWindow, IpcMain, screen } = require("electron");
 const ejse = require('ejs-electron')
 const path = require("path");
+const fs = require("fs");
 const url = require("url");
 const settings = require("./js/json/settings.json");
 const ui = settings.launcher.ui;
@@ -15,6 +16,16 @@ if(settings.launcher.debug.environment !== 'production') {
     require('electron-reload')(__dirname, {
         electron: path.join(__dirname, '../node_modules', '.bin', 'electron')
     });
+}
+
+const getSplashesText = () => {
+
+    let data  = fs.readFileSync(path.join(__dirname, 'assets', 'splashes_texts.json'), 'utf8')
+    let splashes = JSON.parse(data)
+
+    let random = Math.floor(Math.random() * splashes.es.length)
+    return splashes.es[random]
+    
 }
 
 const createWindow = () => {
@@ -40,6 +51,7 @@ const createWindow = () => {
 
     if (process.env.NODE != 'production') { win.openDevTools() }
 
+    ejse.data('splash_text', getSplashesText())
     ejse.data('title', ui.title);
     ejse.data('srcIcon', path.join(__dirname, 'assets', ui.icon_name))
     ejse.data('bgId', path.join(__dirname, 'assets', 'backgrounds', `${ui.default_background}`)) // Get background based on what background is set in settings.json
