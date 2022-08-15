@@ -1,0 +1,47 @@
+#mainContainer {
+    position: relative;
+    height: 100%;
+
+    .section-header {
+         position: relative;
+        top: 0px;
+        height: 85%;
+        display: flex;
+
+        .left {
+            width: 75%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-right: 2px solid rgb(95, 95, 95);
+        }
+
+        .right {
+            width: 25%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+
+.btnPlayMinecraft {
+    background-color: #1a8d16;
+    border: 1.5px solid #105c0e;
+    border-radius: 7px;
+    padding: 12px 75px; 
+    color: white;
+    font-size: 17px;
+    font-family: Helvetica, sans-serif;
+    box-shadow: 3px 3px 2px 0px rgba(8, 0, 0, 0.15);
+    transition: all 0.5s ease-in-out;
+}
+.btnPlayMinecraft:hover {
+    background-color: #105c0e;
+    border-radius: 3px;
+    border: 2px solid #e7e7e7;
+}

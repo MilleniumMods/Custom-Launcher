@@ -1,0 +1,34 @@
+@use "frame.scss";
+@use "preloader.scss";
+@use "landing.scss";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    transition: background-image 1s ease;
+    /*background-size: cover;*/
+    background-position: initial;
+    background-repeat: no-repeat;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 45px);
+}
+
+#main[overlay] {
+    filter: blur(3px) contrast(0.9) brightness(1.0);
+}

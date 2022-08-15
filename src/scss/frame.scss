@@ -1,0 +1,77 @@
+/* Frame Bar*/
+
+$color-primary: rgb(22, 22, 22);
+$color-secondary: rgb(44, 44, 44);
+
+#frameBar {
+    position: relative;
+    user-select: none;
+    background-color: $color-primary;
+    width: 100%;
+}
+
+/* Frame Windows Content */
+#frame-win {
+    height: 35px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-app-region: drag;
+}
+
+/* Frame Windows Title */
+.frame-win-header {
+    color: white;
+    margin-left: 10px;
+    align-items: center;
+    -webkit-app-region: no-drag;
+}
+
+/* Frame Windows App Icon */
+.frame-app-icon {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 2px;
+}
+
+.frame-app-title {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Frame Content Buttons*/
+.frame-actions {
+    display: flex;
+    align-items: center;
+    -webkit-app-region: no-drag;
+}
+
+/* Frame Buttons */
+.frameBtn {
+    height: 35px;
+    width: 45px;
+    border: none;
+    cursor: pointer;
+    margin: auto;
+    background-color: $color-primary;
+    color: white;
+    font-size: 15px;
+    transition: all 0.2s ease-in-out;
+}
+ .frameBtn:hover {
+    background-color: $color-secondary;
+  }
+  .frameBtn:active {
+    background-color: $color-secondary;
+  }
+  .frameBtn:focus {
+    outline: none;
+  }
+
+/* Button Close*/
+.btnClose:hover {
+    background-color: rgba(151, 12, 12, 0.829);
+}

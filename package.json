@@ -33,7 +33,8 @@
     "electron": "^19.0.9",
     "electron-reload": "^2.0.0-alpha.1",
     "esm": "^3.2.25",
-    "requirejs": "^2.3.6"
+    "requirejs": "^2.3.6",
+    "sass": "^1.54.4"
   },
   "dependencies": {
     "@electron/remote": "^2.0.8",
