@@ -4,7 +4,8 @@
   "description": "Launcher de Minecraft personalizable basado en ElectronJS",
   "main": "src/main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "dev:start": "sass src/scss/main.scss src/css/main.css && electron ."
   },
   "repository": {
     "type": "git",
