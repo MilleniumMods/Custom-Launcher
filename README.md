@@ -70,6 +70,8 @@ Custom Launcher es un projecto open-source creado y administrado por MilleniumMo
 - [ ] Soporte multi-lenguaje:
     - [x] Español
     - [ ] Inglés 
+- [ ] Intentar almacenar en cache ciertas funciones para acelerar los tiempos de carga
+- [ ] Añadir mejor compatibilidad/shortcuts para VisualStudioCode
 
 <!-- LICENCIA -->
 # Licencia
