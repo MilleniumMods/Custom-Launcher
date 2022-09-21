@@ -1,7 +1,6 @@
-const path = require("path");
+// const path = require("path");
+// const { randomBytes } = require("crypto");
 const settings = require('./json/settings.json')
-const axios = require('axios');
-const { randomBytes } = require("crypto");
 const debuglog = settings.launcher.debug.debug_log_prefix
 
 window.addEventListener("DOMContentLoaded",() => {
@@ -12,6 +11,8 @@ window.addEventListener("DOMContentLoaded",() => {
 
 // Get minecraft versions
 const getMinecraftVersions = () => { 
+    const axios = require('axios');
+
     console.log(debuglog + 'Obteniendo lista de versiones'); // Debug
 
     let cbVersions = document.getElementById('cbVersions') // Get select element

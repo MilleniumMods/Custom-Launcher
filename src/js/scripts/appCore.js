@@ -1,5 +1,4 @@
 const { IpcRenderer, shell, webFrame } = require('electron');
-const remote = require('@electron/remote');
 
 // window onload preload
 window.onload = () => {
@@ -11,6 +10,7 @@ window.onload = () => {
 
 document.addEventListener('readystatechange', () => {
     if (document.readyState === 'interactive') {
+        const remote = require('@electron/remote');
 
         document.getElementById('frameBtn_close').addEventListener('click', () => {
             const windows = remote.getCurrentWindow();
