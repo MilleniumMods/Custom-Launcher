@@ -1,0 +1,12 @@
+{
+    "profiles": [
+        {
+            "name": "NSMPSM",
+            "version": "1.12.2"
+        },
+        {
+            "name": "LMDLM",
+            "version": "1.7.10"
+        }
+    ]
+}
